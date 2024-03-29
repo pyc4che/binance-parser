@@ -1,3 +1,4 @@
 dev.ini
 .venv
 .vscode
+__pycache__

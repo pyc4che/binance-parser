@@ -49,7 +49,10 @@ class BinanceClient:
                 and float(asset['free']) != 0.0):
                 _name = str(asset['asset'])
 
-                _amount = float(asset['free'])
+                _amount = round(
+                    float(asset['free']),
+                    3
+                )
 
                 assets[_name] = {
                     'amount': _amount
